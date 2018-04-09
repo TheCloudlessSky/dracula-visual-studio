@@ -55,7 +55,12 @@
               <Item Name="CppEnumSemanticTokenFormat" Foreground="0x00F2F8F8" Background="0x02000000" BoldFont="No" />
               <Item Name="CppMacroSemanticTokenFormat" Foreground="0x007BFA50" Background="0x02000000" BoldFont="No" />
               <Item Name="urlformat" Foreground="0x008CFAF1" Background="0x02000000" BoldFont="No" />
-              <Item Name="CurrentLineActiveFormat" Foreground="0x02000000" Background="0x005A4744" BoldFont="No" />
+              <!-- IMPORTANT: The "CurrentLine*Format" has opacity when rendered so you must adjust this accordingly. -->
+              <!-- VS2015 -->
+              <Item Name="CurrentLineActiveFormat" Foreground="0x02000000" Background="0x00423533" BoldFont="No" />
+              <Item Name="CurrentLineInactiveFormat" Foreground="0x02000000" Background="0x00423533" BoldFont="No" />
+              <!-- VS2017+ -->
+              <Item Name="CurrentLineFormat" Foreground="0x02000000" Background="0x00423533" BoldFont="No" />
               <Item Name="outlining.square" Foreground="0x00555555" Background="0x00E2E2E2" BoldFont="No" />
               <Item Name="outlining.verticalrule" Foreground="0x00A5A5A5" Background="0x02000000" BoldFont="No" />
               <Item Name="outlining.collapsehintadornment" Foreground="0x00E8DDD7" Background="0x005A4744" BoldFont="No" />
@@ -96,6 +101,10 @@
               <Item Name="delegate name" Foreground="0x00FDE98B" Background="0x02000000" BoldFont="No" />
               <Item Name="class name" Foreground="0x00FDE98B" Background="0x02000000" BoldFont="No" />
               <Item Name="string - verbatim" Foreground="0x008CFAF1" Background="0x02000000" BoldFont="No" />
+
+              <!-- Razor -->
+              <Item Name="RazorCode" Foreground="0x00F8F8F2" Background="0x00362A28" BoldFont="No" />
+              <Item Name="HTML Server-Side Script" Foreground="0x00F8F8F2" Background="0x00362A28" BoldFont="No" />
             </Items>
           </Category>
           <Category GUID="{E0187991-B458-4F7E-8CA9-42C9A573B56C}" FontIsDefault="Yes">
